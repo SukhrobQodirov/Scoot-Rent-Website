@@ -1,0 +1,55 @@
+.process__container {
+  padding-top: 160px;
+}
+
+.process__list {
+  @include flex-display;
+  column-gap: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 1000%;
+    height: 15px;
+    display: block;
+    background: url("../../../assets/images/gray-strip.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 41px;
+    right: calc(100% - 798px);
+    z-index: -1;
+  }
+}
+
+.process__list-item--span {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcb72b;
+  border-radius: 50%;
+}
+
+.process__list-item--text {
+  margin-bottom: 27px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+
+.process__list-item--info {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939caa;
+}

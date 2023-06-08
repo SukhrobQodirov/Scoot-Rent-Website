@@ -1,5 +1,6 @@
-@import "./container/container";
-@import "./visually-hidden";
-@import  "./button/button";
-@import "./header/header";
-@import "./intro/intro";
+@import "./container/_container";
+@import "./_visually-hidden";
+@import  "./button/_button";
+@import "./header/_header";
+@import "./intro/_intro";
+@import "./process/_process";
