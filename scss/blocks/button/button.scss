@@ -1,0 +1,18 @@
+.button {
+  width: 180px;
+  height: 53px;
+  padding: 14px 39px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+
+  &-coral {
+    color: #ffffff;
+    background: #fcb72b;
+  }
+}

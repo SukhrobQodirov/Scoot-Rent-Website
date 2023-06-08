@@ -1,0 +1,25 @@
+.header__container {
+  padding-top: 22px;
+  padding-bottom: 21px;
+  column-gap: 58px;
+}
+
+.header__navbar {
+  @include flex-display;
+  width: 100%;
+}
+
+.header__navbar-items {
+  @include flex-display;
+  column-gap: 32px;
+}
+
+.header__navbar-item--link {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939caa;
+}
+

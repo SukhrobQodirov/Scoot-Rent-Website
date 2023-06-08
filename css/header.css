@@ -1,0 +1,28 @@
+.header__container {
+  padding-top: 22px;
+  padding-bottom: 21px;
+}
+
+.header__navbar {
+  display: flex;
+  font-display: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__navbar-items {
+  display: flex;
+  font-display: row;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 32px;
+}
+
+.header__navbar-item--link {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939caa;
+}/*# sourceMappingURL=header.css.map */
