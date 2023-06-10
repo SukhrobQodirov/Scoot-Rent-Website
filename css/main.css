@@ -229,3 +229,110 @@ img {
   line-height: 25px;
   color: #939caa;
 }
+
+.benefits {
+  padding-top: 147px;
+}
+
+.benefits__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 160px;
+}
+
+.benefits__list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  justify-content: space-between;
+}
+.benefits__list-item:nth-child(even) .benefits__item-image--wrapper::before {
+  background: url("../../../assets/images/big-arrow-from-left.svg");
+  position: absolute;
+  top: 0;
+  left: calc(-100% - 105px);
+}
+.benefits__list-item:nth-child(even) .benefits__item-image--wrapper::after {
+  position: absolute;
+  left: calc(-100% - 64px);
+}
+.benefits__list-item:nth-child(3) .benefits__item-image--wrapper::before {
+  top: 85px;
+  right: 0;
+  left: 256px;
+}
+
+.benefits__list-item--wrapper {
+  max-width: 445px;
+}
+
+.benefits__list-item--title {
+  margin-bottom: 24px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+
+.benefits__list-item--subtitle {
+  margin-bottom: 40px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939caa;
+}
+
+.benefits__list-item--link {
+  padding: 14px 44px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  background: #fcb72b;
+}
+
+.benefits__item-image--wrapper {
+  width: 445px;
+  height: 445px;
+  display: inline-block;
+  position: relative;
+}
+.benefits__item-image--wrapper::before {
+  content: "";
+  width: 740px;
+  height: 150px;
+  display: inline-block;
+  background: url("../../../assets/images/big-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+  left: -130px;
+}
+.benefits__item-image--wrapper::after {
+  content: "";
+  display: inline-block;
+  width: 445px;
+  height: 445px;
+  background: #e5ecf4;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: calc(100% + 64px);
+  z-index: -1;
+}
