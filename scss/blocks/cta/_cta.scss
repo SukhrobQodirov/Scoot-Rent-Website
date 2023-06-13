@@ -1,0 +1,21 @@
+.cta {
+    width: 100%;
+    padding: 102px 0;
+    background-color: #495567;
+    background-image: url("../../../assets/images/cta-background-rings.svg");
+    background-position: right bottom -97px;
+    background-size: 1153px 347px;
+    background-repeat: no-repeat;
+}
+
+
+.cta__text {
+    @include space-mono-font;
+    color: #fff;
+}
+
+.cta__links {
+    @include flex-display;
+    column-gap: 18px;
+}
+

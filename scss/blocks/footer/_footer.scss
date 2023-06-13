@@ -1,0 +1,33 @@
+.footer {
+  background-color: #333a44;
+}
+
+.footer__container {
+  padding-top: 35px;
+  padding-bottom: 32px;
+  column-gap: 58px;
+}
+
+.footer__navbar {
+  @include flex-display;
+  width: 100%;
+}
+
+.footer__navbar-items {
+  @include flex-display;
+  column-gap: 32px;
+}
+
+.footer__navbar-item--link {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939caa;
+}
+
+.footer__navbar-socials {
+    @include flex-display;
+    column-gap: 24px;
+}

@@ -1,0 +1,122 @@
+.benefits {
+  padding-bottom: 329px;
+}
+
+.benefits__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 155px;
+}
+
+.benefits__list-item {
+  @include flex-display;
+  column-gap: 220px;
+
+  &--wrapper {
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 445px;
+      height: 445px;
+      background: #e5ecf4;
+      border-radius: 50%;
+      position: absolute;
+    }
+  }
+
+  &:nth-child(odd) {
+    .benefits__list-item--wrapper {
+        &::after {
+            left: calc(100% + 64px);
+            z-index: -1;
+        }
+    }
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+
+    .benefits__list-item--wrapper {
+        &::after {
+            right: calc(100% + 64px);
+            z-index: -1;
+        }
+    }
+  }
+
+  &:nth-child(1) {
+    .benefits__list-item--wrapper {
+      position: relative;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 740px;
+        height: 150px;
+        background: url("../../../assets/images/arrow-to-left.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        left: -130px;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    .benefits__list-item--wrapper {
+      position: relative;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 740px;
+        height: 150px;
+        background: url("../../../assets/images/arrow-to-right.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        right: calc(100% - 185px);
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    .benefits__list-item--wrapper {
+      position: relative;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 740px;
+        height: 150px;
+        background: url("../../../assets/images/arrow-to-left.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 85px;
+        left: calc(100% - 190px);
+      }
+    }
+  }
+}
+
+.benefits__item-content--title {
+  @include space-mono-font;
+  margin-bottom: 24px;
+  color: $accent-title-color;
+}
+
+.benefits__item-content--desc {
+  @include lexend-deca-font;
+  color: $accent-text-color;
+  margin-bottom: 40px;
+}
+
+.benefits__list-item--image {
+  border-radius: 50%;
+}

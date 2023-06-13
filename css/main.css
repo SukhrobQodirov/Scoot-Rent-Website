@@ -173,6 +173,7 @@ img {
 
 .process__container {
   padding-top: 160px;
+  padding-bottom: 200px;
 }
 
 .process__list {
@@ -228,4 +229,191 @@ img {
   font-size: 15px;
   line-height: 25px;
   color: #939caa;
+}
+
+.benefits {
+  padding-bottom: 329px;
+}
+
+.benefits__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 155px;
+}
+
+.benefits__list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 220px;
+       column-gap: 220px;
+}
+.benefits__list-item--wrapper::after {
+  content: "";
+  display: inline-block;
+  width: 445px;
+  height: 445px;
+  background: #e5ecf4;
+  border-radius: 50%;
+  position: absolute;
+}
+.benefits__list-item:nth-child(odd) .benefits__list-item--wrapper::after {
+  left: calc(100% + 64px);
+  z-index: -1;
+}
+.benefits__list-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.benefits__list-item:nth-child(even) .benefits__list-item--wrapper::after {
+  right: calc(100% + 64px);
+  z-index: -1;
+}
+.benefits__list-item:nth-child(1) .benefits__list-item--wrapper {
+  position: relative;
+}
+.benefits__list-item:nth-child(1) .benefits__list-item--wrapper::before {
+  content: "";
+  display: inline-block;
+  width: 740px;
+  height: 150px;
+  background: url("../../../assets/images/arrow-to-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: -130px;
+}
+.benefits__list-item:nth-child(2) .benefits__list-item--wrapper {
+  position: relative;
+}
+.benefits__list-item:nth-child(2) .benefits__list-item--wrapper::before {
+  content: "";
+  display: inline-block;
+  width: 740px;
+  height: 150px;
+  background: url("../../../assets/images/arrow-to-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: calc(100% - 185px);
+}
+.benefits__list-item:nth-child(3) .benefits__list-item--wrapper {
+  position: relative;
+}
+.benefits__list-item:nth-child(3) .benefits__list-item--wrapper::before {
+  content: "";
+  display: inline-block;
+  width: 740px;
+  height: 150px;
+  background: url("../../../assets/images/arrow-to-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 85px;
+  left: calc(100% - 190px);
+}
+
+.benefits__item-content--title {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  margin-bottom: 24px;
+  color: #495567;
+}
+
+.benefits__item-content--desc {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin-bottom: 40px;
+}
+
+.benefits__list-item--image {
+  border-radius: 50%;
+}
+
+.cta {
+  width: 100%;
+  padding: 102px 0;
+  background-color: #495567;
+  background-image: url("../../../assets/images/cta-background-rings.svg");
+  background-position: right bottom -97px;
+  background-size: 1153px 347px;
+  background-repeat: no-repeat;
+}
+
+.cta__text {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #fff;
+}
+
+.cta__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+}
+
+.footer {
+  background-color: #333a44;
+}
+
+.footer__container {
+  padding-top: 35px;
+  padding-bottom: 32px;
+  -moz-column-gap: 58px;
+       column-gap: 58px;
+}
+
+.footer__navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer__navbar-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+
+.footer__navbar-item--link {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939caa;
+}
+
+.footer__navbar-socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
 }
